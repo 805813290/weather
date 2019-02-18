@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "X";
+	src: url("../font/X.ttf") format('truetype');
+}
+body {
+	width: 100%;
+	height: 100%;
+	color: #2d465f;
+	font-family: "X";
+	background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+header {
+	position: fixed;
+	width: 100%;
+	height: 12%;
+	top: 0;
+	right: 0;
+	left: 0;
+	border-bottom: dotted #9599e2 8px;
+}
+#head_title {
+	text-align: center;
+	line-height: 100%;
+	font-size: medium;
+}
+p#city {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 10%;
+}
+img#update {
+	position: fixed;
+	right: 3%;
+	top: 3%;
+}
+#weather{
+	position: fixed;
+	top: 12%;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 88%;
+}
+#w_left {
+	position: fixed;
+	left: 0;
+	width: 50%;
+	height: 88%;
+	float: left;
+	clear: left;
+	background: url("../image/100.png") no-repeat center ;
+}
+#w_right {
+	position: fixed;
+	right: 0;
+	left: 50%;
+	width: 50%;
+	height: 88%;
+	float: right;
+	clear: left;
+	background: top right;
+}
+#w_temper {
+	width:100%;
+	height: 0;
+	font-size: 4em;
+	font-weight: bold;
+}
+#w_txt, #pm, #air, #day, #date {
+	height: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0 0;
+	margin: 1px 0;
+}
+#tab {
+	position: relative;
+	width:5%;
+	height: 100%;
+}
+#temper_tab, #humid_tab {
+	position: fixed;
+	right: 0;
+	float:left;
+	list-style: none;
+	width: 5%;
+	height: 20%;
+	line-height: 150%;
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	word-wrap: break-word;
+	border-width: 0;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+#temper_tab {
+	top: 40%;
+	background: #C9CCD3;
+}
+#humid_tab {
+	top: 60%;
+	background: #CDCDCD;
+}
+#down {
+	display: none;
+}

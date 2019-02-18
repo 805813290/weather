@@ -1,0 +1,171 @@
+@font-face {
+	font-family: "X";
+	src: url("../font/X.ttf") format('truetype');
+}
+body {
+	width: 100%;
+	height: 100%;
+	color: #2d465f;
+	font-family: "X";
+	background-image: url(../bg.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 7%;
+	top: 0;
+	right: 0;
+	left: 0;
+	border-bottom: dotted #9599e2 8px;
+}
+#head_title {
+	width: 100%;
+	height: 7%;
+	text-align: center;
+	line-height: 100%;
+}
+p#city {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 10%;
+}
+img#update {
+	position: fixed;
+	right: 3%;
+	top: 1.7%;
+}
+div#weather {
+	position: fixed;
+	top: 7%;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 93%;
+}
+#w_left {
+	position: fixed;
+	left: 0;
+	width: 40%;
+	height: 40%;
+	float: left;
+	clear: left;
+	background-image: url(../image/100.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#w_right {
+	position: fixed;
+	right: 0;
+	left: 40%;
+	width: 60%;
+	height: 40%;
+	float: right;
+	clear: left;
+	background: top right;
+}
+#w_temper {
+	width:100%;
+	height: 0;
+	font-size: 4em;
+	font-weight: bold;
+}
+#w_txt, #pm, #air, #day, #date {
+	height: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0 0;
+	margin: 1px 0;
+}
+
+#down {
+	position: fixed;
+	top: 50%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+#tab {
+	position: relative;
+	width:100%;
+	height: 5%;
+}
+#temper_tab {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#humid_tab {
+	position: absolute;
+	top: 0;
+	left: 20%;
+}
+#temper_tab, #humid_tab {
+	position: fixed;
+	bottom: 0;
+	top: 50%;
+	right: 0;
+	float:left;
+	list-style: none;
+	width: 20%;
+	height: 5%;
+	line-height: 160%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-width: 5px;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+}
+#temper_tab, #humid_tab {
+	border-top: #000000;
+	border-right: #000000;
+	border-left: #000000;
+}
+#container {
+	position: relative;
+}
+#content1, #content2 {
+	width: 100%;
+	height: 55%;
+	position: fixed;
+	top: 55%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top: dotted;
+	border-width: 2px;
+	border-color: #8BC6EC;
+}
+#content1 {
+	background-color: #FFFFFF;
+	background-image: url(../bot.png);
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+#temper_tab {
+	background-color: #8BC6EC;
+}
+#content2 {
+	background-color: #FFFFFF;
+	background-image: url(../bot.png);
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+#humid_tab {
+	background-color: #8BC6EC;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+#chart1 .ct-line,
+#chart1 .ct-point,
+#chart2 .ct-line,
+#chart2 .ct-point {
+	stroke: #3c5f81;
+	stroke-dasharray: 10px 20px;
+}

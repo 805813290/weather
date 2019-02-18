@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<!-- 竖屏 -->
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+	<!-- 横屏 -->
+	<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
+
+	<link rel="stylesheet"
+          href="css/chartist.min.css">
+	<title>Weather</title>
+</head>
+<body >
+	<header>
+		<div id="head_title">
+			<p id="city">西安</p>
+			<img id="update" src="image/update.svg" alt="刷新" onclick="update()">
+		</div>
+
+	</header>
+	<div id="weather">
+		<!-- left -->
+		<div id="w_left">
+		</div>	
+
+		<!-- right -->
+		<div id="w_right">
+			<p id="w_temper">27℃</p><br>
+			<p id="w_txt">晴</p><br>
+			<p id="pm">PM2.5</p><br>
+			<p id="air">空气质量 52</p><br>
+			<p id="day"></p><br>
+			<p id="date"></p>
+		</div>
+	</div>
+	<div id="down">
+		<ul id="tab">
+			<li id="temper_tab" onclick="show(1)">温度</li>
+			<li id="humid_tab" onclick="show(2)">湿度</li>
+		</ul>
+		<div id="container">
+			<div id="content1" style="z-index: 1;">
+				<div class="ct-chart ct-perfect-fourth" id="chart1"></div>
+			</div>
+			<div id="content2">
+				<div class="ct-chart ct-perfect-fourth" id="chart2"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+	<script src="js/chartist.min.js"></script>
+	<script src="js/form.js"></script>
+</body>
+</html>
+
